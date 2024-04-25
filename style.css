@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply outline-none;
+  }
+  html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    text-shadow: 2px 2px 2px #333;
+    font-size: 3.5rem;
+    color: white;
+  }
+  h2 {
+    @apply text-3xl md:text-[42px];
+  }
+  h3 {
+    @apply text-2xl md:text-3xl text-primary font-medium;
+  }
+  header {
+    @apply bg-hero-img bg-no-repeat bg-cover bg-center h-screen w-full bg-fixed;
+  }
+}
+
+@layer components {
+  #navbar {
+    @apply fixed w-full top-0 py-2 px-2 md:px-4 transition-all z-50 border-b border-transparent;
+  }
+
+  .btn {
+    @apply py-2 md:py-3 px-5 md:px-7 bg-primary text-white whitespace-nowrap transition-colors hover:bg-blue-600;
+  }
+  .nav-link {
+    @apply px-4 lg:px-7 py-1 lg:py-2 text-base md:text-xl whitespace-nowrap hover:bg-primary transition-colors text-white;
+  }
+  .section {
+    @apply scroll-m-14 py-10 md:py-20 px-2 md:px-4;
+  }
+  .input {
+    @apply border border-white px-2 py-2 rounded-md bg-transparent text-white placeholder:text-white w-full focus:ring-2;
+  }
+}
+@layer utilities {
+  .active-nav {
+    background-color: white;
+    border-color: rgba(128, 128, 128, 0.249) !important;
+
+    .logo {
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+      color: #369;
+      &:hover {
+        color: rgb(62, 124, 186);
+      }
+    }
+    .nav a {
+      color: #369;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+      &:hover {
+        color: white;
+      }
+    }
+    .mobile-nav {
+      color: gray;
+      border-color: gray;
+    }
+  }
+}

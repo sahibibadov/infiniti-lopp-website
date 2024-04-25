@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="">
+    <header class="flex items-center justify-center flex-col gap-4">
+      <!-- nav -->
+      <div id="navbar" class="">
+        <div class="container mx-auto flex items-center justify-between gap-4">
+          <a href="#" class="logo font-bold text-xl md:text-2xl text-white whitespace-nowrap"
+            >Infinite Loop
+          </a>
+          <nav class="nav hidden md:flex items-center gap-3">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#WhatWeDo" class="nav-link">What We Do</a>
+            <a href="#Testimonials" class="nav-link">Testimonials</a>
+            <a href="#Galery" class="nav-link">Gallery</a>
+            <a href="#" class="nav-link">Contact</a>
+          </nav>
+          <!-- mobile nav -->
+          <div
+            class="mobile-nav relative group block md:hidden text-white border border-white py-1 px-3 rounded-sm"
+          >
+            <button><i class="fa-solid fa-bars"></i></button>
+            <div
+              tabindex="0"
+              class="absolute border shadow-sm p-2 top-11 right-0 w-[100vw] max-w-2xl bg-white hidden group-focus-within:flex flex-col gap-2 items-end"
+            >
+              <a href="#" class="px-4 lg:px-7 py-1 lg:py-2 whitespace-nowrap text-primary">Home</a>
+              <a href="#" class="px-4 lg:px-7 py-1 lg:py-2 whitespace-nowrap text-primary"
+                >What We Do</a
+              >
+              <a href="#" class="px-4 lg:px-7 py-1 lg:py-2 whitespace-nowrap text-primary"
+                >Testimonials</a
+              >
+              <a href="#" class="px-4 lg:px-7 py-1 lg:py-2 whitespace-nowrap text-primary"
+                >Gallery</a
+              >
+              <a href="#" class="px-4 lg:px-7 py-1 lg:py-2 whitespace-nowrap text-primary"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- title -->
+      <h1 class="max-md:text-4xl">Infinite Loop</h1>
+      <p class="text-white max-w-xl mx-auto text-base md:text-xl text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quas!
+      </p>
+    </header>
+
+    <!-- sections -->
+    <main class="">
+      <!-- WhatWeDo -->
+      <section id="WhatWeDo" class="section container mx-auto">
+        <h2 class="text-primary mb-4 md:mb-8">What We Do</h2>
+        <p class="text-xs md:text-[18px] text-black/40 tracking-wider !leading-9">
+          This is Infinite Loop, free Bootstrap 4.0 HTML template with a parallax effect. This
+          layout is what you can modify and use for your websites. Please spread a word to your
+          friends about our website. Thank you for supporting us. If you have any question, you can
+          contact us or chat with us on our
+          <a href="#" class="text-primary">Tooplate Facebook page.</a>
+        </p>
+
+        <!-- card -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-10 md:mt-20">
+          <article class="flex flex-col md:flex-row gap-4 md:gap-8 max-md:text-center">
+            <i class="fa-solid fa-users text-primary text-5xl font-bold"></i>
+            <div class="space-y-4 md:space-y-8">
+              <h3>Market Analysis</h3>
+              <p class="text-xs md:text-[18px] text-black/40 tracking-wide !leading-8">
+                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus
+                lacinia, sed iaculis nibh semper. Pellentesque est urna.
+              </p>
+            </div>
+          </article>
+          <article class="flex flex-col md:flex-row gap-4 md:gap-8 max-md:text-center">
+            <i class="fa-solid fa-users text-primary text-5xl font-bold"></i>
+            <div class="space-y-4 md:space-y-8">
+              <h3>Market Analysis</h3>
+              <p class="text-xs md:text-[18px] text-black/40 tracking-wide !leading-8">
+                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus
+                lacinia, sed iaculis nibh semper. Pellentesque est urna.
+              </p>
+            </div>
+          </article>
+          <article class="flex flex-col md:flex-row gap-4 md:gap-8 max-md:text-center">
+            <i class="fa-solid fa-users text-primary text-5xl font-bold"></i>
+            <div class="space-y-4 md:space-y-8">
+              <h3>Market Analysis</h3>
+              <p class="text-xs md:text-[18px] text-black/40 tracking-wide !leading-8">
+                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus
+                lacinia, sed iaculis nibh semper. Pellentesque est urna.
+              </p>
+              <button class="btn">Details</button>
+            </div>
+          </article>
+          <article class="flex flex-col md:flex-row gap-4 md:gap-8 max-md:text-center">
+            <i class="fa-solid fa-users text-primary text-5xl font-bold"></i>
+            <div class="space-y-4 md:space-y-8">
+              <h3>Market Analysis</h3>
+              <p class="text-xs md:text-[18px] text-black/40 tracking-wide !leading-8">
+                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus
+                lacinia, sed iaculis nibh semper. Pellentesque est urna.
+              </p>
+              <button class="btn">Details</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--Testimonials  -->
+      <section
+        id="Testimonials"
+        class="section bg-testimonials-img bg-center bg-fixed bg-no-repeat bg-cover"
+      >
+        <div class="container mx-auto">
+          <h3 class="text-center text-white mb-4 md:mb-6">Testimonials</h3>
+          <p class="text-white max-w-2xl mx-auto text-center">
+            Nulla dictum sem non eros euismod, eu placerat tortor lobortis. Suspendisse id velit eu
+            libero pellentesque interdum. Etiam quis congue eros.
+          </p>
+
+          <!-- slider -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto mt-8 md:mt-12 gap-5"
+          >
+            <figure class="">
+              <img
+                src="./public/testimonial-img-01.jpg"
+                alt="ss"
+                class="bg-cover rounded-full bg-center mx-auto"
+              />
+              <figcaption class="mt-3 md:mt-5 space-y-3">
+                <p class="line-clamp-4 text-white text-base md:text-xl text-balance text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis dolorum modi
+                  quam eaque esse necessitatibus.
+                </p>
+                <blockquote class="italic text-white text-base md:text-xl text-center md:text-end">
+                  Caterina (designer)
+                </blockquote>
+              </figcaption>
+            </figure>
+            <figure class="">
+              <img
+                src="./public/testimonial-img-01.jpg"
+                alt="ss"
+                class="bg-cover rounded-full bg-center mx-auto"
+              />
+              <figcaption class="mt-3 md:mt-5 space-y-3">
+                <p class="line-clamp-4 text-white text-base md:text-xl text-balance text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis dolorum modi
+                  quam eaque esse necessitatibus.
+                </p>
+                <blockquote class="italic text-white text-base md:text-xl text-center md:text-end">
+                  Caterina (designer)
+                </blockquote>
+              </figcaption>
+            </figure>
+            <figure class="">
+              <img
+                src="./public/testimonial-img-01.jpg"
+                alt="ss"
+                class="bg-cover rounded-full bg-center mx-auto"
+              />
+              <figcaption class="mt-3 md:mt-5 space-y-3">
+                <p class="line-clamp-4 text-white text-base md:text-xl text-balance text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis dolorum modi
+                  quam eaque esse necessitatibus.
+                </p>
+                <blockquote class="italic text-white text-base md:text-xl text-center md:text-end">
+                  Caterina (designer)
+                </blockquote>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- galery -->
+      <section id="Galery" class="section container mx-auto text-center">
+        <h3 class="mb-3 md:mb-5">Gallery</h3>
+        <p class="max-w-2xl mx-auto text-center text-black/40">
+          Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia,
+          sed iaculis nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique
+          urna.
+        </p>
+
+        <!-- slider -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-8 md:mt-12 gap-5"
+        >
+          <figure class="relative group cursor-pointer max-sm:max-w-56 mx-auto">
+            <img
+              src="./public/gallery-tn-03.jpg"
+              alt="ssad"
+              class="object-cover object-center w-full h-full"
+            />
+            <figcaption>
+              <!-- title -->
+              <h4
+                class="text-xl md:text-2xl font-semibold text-white absolute z-10 left-5 bottom-10 opacity-0 invisible group-hover:bottom-7 group-hover:opacity-100 group-hover:visible duration-500 text-start transition-all"
+              >
+                SEAVIEW <br />
+                <span class="font-normal">MEGACITY</span>
+              </h4>
+              <!--  overlay-->
+              <div
+                class="absolute inset-0 bg-[#4a37536e] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <!-- bottom border -->
+              <span
+                class="absolute transition-all ease-linear bottom-0 left-0 h-0 group-hover:h-2 duration-300 w-full bg-blue-500"
+              ></span>
+            </figcaption>
+          </figure>
+          <figure class="relative group cursor-pointer max-sm:max-w-56 mx-auto">
+            <img
+              src="./public/gallery-tn-03.jpg"
+              alt="ssad"
+              class="object-cover object-center w-full h-full"
+            />
+            <figcaption>
+              <!-- title -->
+              <h4
+                class="text-xl md:text-2xl font-semibold text-white absolute z-10 left-5 bottom-10 opacity-0 invisible group-hover:bottom-7 group-hover:opacity-100 group-hover:visible duration-500 text-start transition-all"
+              >
+                SEAVIEW <br />
+                <span class="font-normal">MEGACITY</span>
+              </h4>
+              <!--  overlay-->
+              <div
+                class="absolute inset-0 bg-[#4a37536e] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <!-- bottom border -->
+              <span
+                class="absolute transition-all ease-linear bottom-0 left-0 h-0 group-hover:h-2 duration-300 w-full bg-blue-500"
+              ></span>
+            </figcaption>
+          </figure>
+          <figure class="relative group cursor-pointer max-sm:max-w-56 mx-auto">
+            <img
+              src="./public/gallery-tn-03.jpg"
+              alt="ssad"
+              class="object-cover object-center w-full h-full"
+            />
+            <figcaption>
+              <!-- title -->
+              <h4
+                class="text-xl md:text-2xl font-semibold text-white absolute z-10 left-5 bottom-10 opacity-0 invisible group-hover:bottom-7 group-hover:opacity-100 group-hover:visible duration-500 text-start transition-all"
+              >
+                SEAVIEW <br />
+                <span class="font-normal">MEGACITY</span>
+              </h4>
+              <!--  overlay-->
+              <div
+                class="absolute inset-0 bg-[#4a37536e] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <!-- bottom border -->
+              <span
+                class="absolute transition-all ease-linear bottom-0 left-0 h-0 group-hover:h-2 duration-300 w-full bg-blue-500"
+              ></span>
+            </figcaption>
+          </figure>
+          <figure class="relative group cursor-pointer max-sm:max-w-56 mx-auto">
+            <img
+              src="./public/gallery-tn-03.jpg"
+              alt="ssad"
+              class="object-cover object-center w-full h-full"
+            />
+            <figcaption>
+              <!-- title -->
+              <h4
+                class="text-xl md:text-2xl font-semibold text-white absolute z-10 left-5 bottom-10 opacity-0 invisible group-hover:bottom-7 group-hover:opacity-100 group-hover:visible duration-500 text-start transition-all"
+              >
+                SEAVIEW <br />
+                <span class="font-normal">MEGACITY</span>
+              </h4>
+              <!--  overlay-->
+              <div
+                class="absolute inset-0 bg-[#4a37536e] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <!-- bottom border -->
+              <span
+                class="absolute transition-all ease-linear bottom-0 left-0 h-0 group-hover:h-2 duration-300 w-full bg-blue-500"
+              ></span>
+            </figcaption>
+          </figure>
+          <figure class="relative group cursor-pointer max-sm:max-w-56 mx-auto">
+            <img
+              src="./public/gallery-tn-03.jpg"
+              alt="ssad"
+              class="object-cover object-center w-full h-full"
+            />
+            <figcaption>
+              <!-- title -->
+              <h4
+                class="text-xl md:text-2xl font-semibold text-white absolute z-10 left-5 bottom-10 opacity-0 invisible group-hover:bottom-7 group-hover:opacity-100 group-hover:visible duration-500 text-start transition-all"
+              >
+                SEAVIEW <br />
+                <span class="font-normal">MEGACITY</span>
+              </h4>
+              <!--  overlay-->
+              <div
+                class="absolute inset-0 bg-[#4a37536e] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <!-- bottom border -->
+              <span
+                class="absolute transition-all ease-linear bottom-0 left-0 h-0 group-hover:h-2 duration-300 w-full bg-blue-500"
+              ></span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="section bg-footer-img bg-center bg-fixed bg-no-repeat bg-cover">
+      <h3 class="text-center text-white mb-4 md:mb-6">Contact Us</h3>
+      <p class="text-white text-center max-w-6xl mx-auto">
+        Proin enim orci, tincidunt quis suscipit in, placerat nec est. Vestibulum posuere faucibus
+        posuere. Quisque aliquam velit eget leo blandit egestas. Nulla id posuere felis, quis
+        tristique nulla.
+      </p>
+
+      <!-- form and social icons -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-5 md:mt-10 max-w-6xl mx-auto">
+        <form class="space-y-4">
+          <input type="text" class="input" placeholder="Youer Name" />
+          <input type="email" class="input" placeholder="Youer Email" />
+          <textarea cols="30" rows="10" class="input resize-none" placeholder="Message"></textarea>
+          <button class="btn rounded-md md:max-w-60 w-full">Submit</button>
+        </form>
+
+        <ul class="flex flex-col gap-10 max-md:items-center">
+          <a href="#" class="text-white transition-colors hover:text-primary text-xl font-normal"
+            ><i class="fa-regular fa-envelope text-4xl align-middle mr-4"></i> mail@company.com</a
+          >
+          <a href="#" class="text-white transition-colors hover:text-primary text-xl font-normal"
+            ><i class="fa-regular fa-envelope text-4xl align-middle mr-4"></i> mail@company.com</a
+          >
+          <a href="#" class="text-white transition-colors hover:text-primary text-xl font-normal"
+            ><i class="fa-regular fa-envelope text-4xl align-middle mr-4"></i> mail@company.com</a
+          >
+          <a href="#" class="text-white transition-colors hover:text-primary text-xl font-normal"
+            ><i class="fa-regular fa-envelope text-4xl align-middle mr-4"></i> mail@company.com</a
+          >
+        </ul>
+      </div>
+
+      <h5 class="mt-10 md:mt-20 text-center text-white">
+        Copyright © 2020 Company Name . Designed by TOOPLATE
+      </h5>
+    </footer>
+    <!-- -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
