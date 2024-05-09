@@ -1,5 +1,9 @@
 import "./style.css";
 
+import LocomotiveScroll from "locomotive-scroll";
+
+const locomotiveScroll = new LocomotiveScroll();
+
 window.addEventListener("scroll", () => {
   let scrollPos = window.scrollY;
   let nav = document.getElementById("navbar");

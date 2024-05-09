@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
+"@darkroom.engineering/tempus@^0.0.46":
+  version "0.0.46"
+  resolved "https://registry.yarnpkg.com/@darkroom.engineering/tempus/-/tempus-0.0.46.tgz#3d958807503e4055fcc4a1aeeff83ca0546c62f0"
+  integrity sha512-s5vav3KMHYezvUCl4ee5epg0oimF6M8C9gAaKxFnFaTvX2q3ywFDryIv6XLd0mRFUt3S1uHDJqKaiEcs2ZVSvw==
+
 "@esbuild/aix-ppc64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.20.2.tgz#a70f4ac11c6a1dfc18b8bbb13284155d933b9537"
@@ -388,6 +393,11 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+clsx@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.1.1.tgz#eed397c9fd8bd882bfb18deab7102049a2f32999"
+  integrity sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==
+
 color-convert@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-2.0.1.tgz#72d3a68d598c9bdb3af2ad1e84f21d896abd4de3"
@@ -618,6 +628,14 @@ jiti@^1.21.0:
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.21.0.tgz#7c97f8fe045724e136a397f7340475244156105d"
   integrity sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==
 
+lenis@^1.0.45:
+  version "1.0.45"
+  resolved "https://registry.yarnpkg.com/lenis/-/lenis-1.0.45.tgz#5e34437527f30e10c87ada3c3c756c7c0caf8475"
+  integrity sha512-wiaYRxr7rK1rY+dhGdMLowV0rkjg+1B2nI50Igyu5USkjDY6lkBNCJi0mVaSL/X3ECyAm/oA0nsihq8ic3p9wg==
+  dependencies:
+    "@darkroom.engineering/tempus" "^0.0.46"
+    clsx "^2.1.0"
+
 lilconfig@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.1.0.tgz#78e23ac89ebb7e1bfbf25b18043de756548e7f52"
@@ -632,6 +650,13 @@ lines-and-columns@^1.1.6:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
+
+locomotive-scroll@^5.0.0-beta.12:
+  version "5.0.0-beta.12"
+  resolved "https://registry.yarnpkg.com/locomotive-scroll/-/locomotive-scroll-5.0.0-beta.12.tgz#400dd6959da2493c2d29260c482b0513921cca53"
+  integrity sha512-xtfgWBGzBGp1i3cY/12i07m/3OkOo/LyAv5ceiy4OkZuk+cNiM7APzgWwyOw4VppDH1P3DlZOCZrA7fhvnqXUA==
+  dependencies:
+    lenis "^1.0.45"
 
 lru-cache@^10.2.0:
   version "10.2.0"
@@ -881,6 +906,7 @@ source-map-js@^1.2.0:
   integrity sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -899,6 +925,7 @@ string-width@^5.0.1, string-width@^5.1.2:
     strip-ansi "^7.0.1"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
